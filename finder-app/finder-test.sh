@@ -57,7 +57,17 @@ do
 	./writer.sh "$WRITEDIR/${username}$i.txt" "$WRITESTR"
 done
 
+
+# echo "$WRITEDIR"
+# echo "$WRITESTR"
+
+
+#FINDER
+
 OUTPUTSTRING=$(./finder.sh "$WRITEDIR" "$WRITESTR")
+
+# echo "$OUTPUTSTRING"
+echo "${MATCHSTR}"
 
 # remove temporary directories
 rm -rf /tmp/aeld-data
